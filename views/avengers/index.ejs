@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= documentTitle %></title>
+</head>
+<body>
+	<% avengersData.forEach(function(Avengers) { %>
+	<div class='avenger'>
+		<h3 class='avenger-name'><%= Avengers.name%></h3>
+		<p class='identity'>Identity: <%= Avengers.identity %></p>
+	</div>
+<% }); %>
+</body>
+</html>

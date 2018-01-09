@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= documentTitle %></title>
+</head>
+<body>
+	<% justiceLeagueData.forEach(function(justiceLeague) { %>
+	<div class='justiceLeague'>
+		<h3 class='justiceLeague-name'><%= justiceLeague.name%></h3>
+		<p class='identity'>Identity: <%= justiceLeague.identity %></p>
+	</div>
+<% }); %>
+</body>
+</html>
